@@ -1,0 +1,18 @@
+- Điện thoại: 750 px (iPhone 6)
+
+- mobile: 768px đến 1024px
+- tablet: 1024px đến 1200px
+- pc: trên 1200px
+
+Compact	( Width < 600(dp))	
+Phone in portrait
+
+Medium	(600(dp) <= width < 840(dp))	
+Tablet in portrait
+Foldable in portrait (unfolded)
+
+Expanded (Width >= 840(dp))
+Phone in landscape
+Tablet in landscape
+Foldable in landscape (unfolded)
+Desktop
