@@ -4,7 +4,16 @@
   height: 100vh;
 }
 
-.leverArrow {
+.levelChessbroad {
+  width: fit-content;
+}
+
+.levelChessbroad img {
+  width: 100%;
+  height: 100%;
+}
+
+.levelArrow {
   font-size: 3rem;
 }
 
@@ -12,6 +21,6 @@
   background-color: aquamarine;
 }
 
-.leverChessbroad {
+.levelChessbroad {
   background-color: antiquewhite;
 }
