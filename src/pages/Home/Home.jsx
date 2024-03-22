@@ -1,12 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import "./Home.css";
-const imageList = require.context("../../img", true);
 
 const Home = () => {
-  const _imageList = imageList.keys().map((img) => imageList(img));
   const [level, setLevel] = useState(1);
-  const [levelImg, setLevelImg] = useState(_imageList[0]);
+  const levelText = ["3x3", "4x4", "5x5", "6x6", "8x8"];
 
   const setPrevLevel = () => {
     let _level = level - 1;
@@ -15,12 +13,10 @@ const Home = () => {
       setLevel(5);
       console.log("click2");
       console.log("setPrevLevel:", _level);
-      setLevelImg(_imageList[_imageList.length - 1]);
     } else {
       setLevel(_level);
       console.log("click1");
       console.log("setPrevLevel:", _level);
-      setLevelImg(_level - 1);
     }
   };
 
@@ -30,12 +26,10 @@ const Home = () => {
       setLevel(1);
       console.log("click2");
       console.log("setNextLevel:", _level);
-      setLevelImg(_imageList[0]);
     } else {
       setLevel(_level);
       console.log("click1");
       console.log("setNextLevel:", _level);
-      setLevelImg(_level + 1);
     }
   };
 
@@ -44,14 +38,14 @@ const Home = () => {
       <section className="container">
         <section className="homeWrapper py-3">
           <section className="levelChessbroad">
-            <img src={levelImg} />
+            <img src={`img/${level}.png`} />
           </section>
           <section className="levelSelection d-flex justify-content-between align-items-center font-monospace  my-4">
             <i
               className="levelArrow -ap icon-chevron-left22"
               onClick={setPrevLevel}
             ></i>
-            <span className="fs-1">3x3</span>
+            <span className="fs-1">{levelText[level - 1]}</span>
             <i
               className="levelArrow -ap icon-chevron-right22"
               onClick={setNextLevel}
