@@ -11,12 +11,8 @@ const Home = () => {
 
     if (_level < 1) {
       setLevel(5);
-      console.log("click2");
-      console.log("setPrevLevel:", _level);
     } else {
       setLevel(_level);
-      console.log("click1");
-      console.log("setPrevLevel:", _level);
     }
   };
 
@@ -24,23 +20,19 @@ const Home = () => {
     let _level = level + 1;
     if (_level > 5) {
       setLevel(1);
-      console.log("click2");
-      console.log("setNextLevel:", _level);
     } else {
       setLevel(_level);
-      console.log("click1");
-      console.log("setNextLevel:", _level);
     }
   };
 
   return (
-    <section className="homeContainer p-4">
-      <section className="container">
+    <section className="homeContainer p-4 d-flex align-items-center">
+      <section className="container d-flex justify-content-center align-items-center">
         <section className="homeWrapper py-3">
           <section className="levelChessbroad">
             <img src={`img/${level}.png`} />
           </section>
-          <section className="levelSelection d-flex justify-content-between align-items-center font-monospace  my-4">
+          <section className="levelSelection d-flex justify-content-between align-items-center font-monospace  my-5">
             <i
               className="levelArrow -ap icon-chevron-left22"
               onClick={setPrevLevel}

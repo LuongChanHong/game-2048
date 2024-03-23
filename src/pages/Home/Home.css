@@ -1,5 +1,5 @@
 .homeContainer {
-  background-color: seagreen;
+  background-color: #00968885;
   width: 100vw;
   height: 100vh;
 }
@@ -9,8 +9,8 @@
 }
 
 .levelChessbroad img {
-  width: 10rem;
-  height: 10rem;
+  width: 100%;
+  height: 100%;
 }
 
 .levelArrow {
@@ -18,9 +18,10 @@
 }
 
 .homeWrapper {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  width: fit-content;
 }
 
 .levelChessbroad {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
