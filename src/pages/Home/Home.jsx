@@ -28,25 +28,27 @@ const Home = () => {
   return (
     <section className="homeContainer p-4 d-flex align-items-center">
       <section className="container d-flex justify-content-center align-items-center">
-        <section className="homeWrapper py-3">
+        <section className="homeWrapper d-flex gap-3">
           <section className="levelChessbroad">
             <img src={`img/${level}.png`} />
           </section>
-          <section className="levelSelection d-flex justify-content-between align-items-center font-monospace  my-5">
-            <i
-              className="levelArrow -ap icon-chevron-left22"
-              onClick={setPrevLevel}
-            ></i>
-            <span className="fs-1">{levelText[level - 1]}</span>
-            <i
-              className="levelArrow -ap icon-chevron-right22"
-              onClick={setNextLevel}
-            ></i>
-          </section>
-          <section className="d-grid gap-2">
-            <button className="btn btn-warning txt-white text-white fs-1">
-              Game Start
-            </button>
+          <section className="levelButtons d-flex gap-3">
+            <section className="levelSelection d-flex justify-content-between align-items-center font-monospace ">
+              <i
+                className="levelArrow -ap icon-chevron-left22"
+                onClick={setPrevLevel}
+              ></i>
+              <span className="fs-1">{levelText[level - 1]}</span>
+              <i
+                className="levelArrow -ap icon-chevron-right22"
+                onClick={setNextLevel}
+              ></i>
+            </section>
+            <section className="d-grid gap-2">
+              <button className="btn btn-warning txt-white text-white fs-1">
+                Game Start
+              </button>
+            </section>
           </section>
         </section>
       </section>

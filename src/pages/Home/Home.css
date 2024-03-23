@@ -4,13 +4,9 @@
   height: 100vh;
 }
 
-.levelChessbroad {
-  width: fit-content;
-}
-
 .levelChessbroad img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .levelArrow {
@@ -19,9 +15,46 @@
 
 .homeWrapper {
   /* background-color: aquamarine; */
-  width: fit-content;
+  flex-flow: column;
+}
+
+.levelButtons {
+  /* background-color: blueviolet; */
+  flex-flow: column;
 }
 
 .levelChessbroad {
   /* background-color: antiquewhite; */
+}
+
+/* @media screen and (max-width: 800px) and (max-height: 350px) {
+  .homeWrapper {
+    width: 75%;
+  }
+} */
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 599px) {
+  .homeWrapper {
+    width: 100%;
+  }
+}
+
+/* TABLET SCREEN */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .homeWrapper {
+    width: 60%;
+  }
+
+  .homeWrapper {
+    flex-flow: row;
+    align-items: center;
+  }
+}
+
+/* PC SCREEN */
+@media screen and (min-width: 900px) {
+  .homeWrapper {
+    width: 25%;
+  }
 }
