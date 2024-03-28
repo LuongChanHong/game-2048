@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Chessboard from "./Chessboard";
 import "../css/common.css";
 import "../css/game.css";
 
 const Game = () => {
   return (
-    <section className="appBackground">
-      <section>GAME LAYOUT</section>
+    <section className="appBackground d-flex align-items-center justify-content-center">
+      <Chessboard />
     </section>
   );
 };

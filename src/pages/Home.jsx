@@ -1,6 +1,6 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "../css/common.css";
+import "../css/color.css";
 import "../css/home.css";
 
 const Home = () => {
@@ -46,7 +46,7 @@ const Home = () => {
               ></i>
             </section>
             <section className="d-grid gap-2">
-              <button className="btn btn-warning txt-white text-white fs-1">
+              <button className="btn btn-success txt-white text-white fs-1">
                 Game Start
               </button>
             </section>

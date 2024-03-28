@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Game from "./pages/Game";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 // import Chessboard from "./pages/Chessboard";
 
 function App() {
