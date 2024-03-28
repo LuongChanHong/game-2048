@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import "./Home.css";
+import "../css/common.css";
+import "../css/home.css";
 
 const Home = () => {
   const [level, setLevel] = useState(1);
@@ -26,7 +27,7 @@ const Home = () => {
   };
 
   return (
-    <section className="homeContainer p-4 d-flex align-items-center">
+    <section className="appBackground p-4 d-flex align-items-center">
       <section className="container d-flex justify-content-center align-items-center">
         <section className="homeWrapper d-flex gap-3">
           <section className="levelChessbroad">

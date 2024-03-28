@@ -1,5 +1,6 @@
 import React from "react";
-import "./Chessboard.css";
+// import "../css/common.css";
+// import "../css/chessboard.css";
 
 const Chessboard = () => {
   return <section>Chessboard</section>;
