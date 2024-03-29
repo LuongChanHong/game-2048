@@ -21,15 +21,24 @@ const Chessboard = () => {
 
   const renderChessboard = () => {
     const _squares = createSquareValue(level);
-
-    for (let i = 0; i < _squares.length; i++) {}
-    return 0;
+    // let row = `<section className="row">`;
+    // for (let i = 0, j = 1; i < _squares.length; i++, j++) {
+    //   if (j % level != 0) {
+    //     row += `<div className="col">${i}</div>`;
+    //   } else {
+    //     row += `<div className="col">${i}</div></section><section className="row">`;
+    //   }
+    // }
+    let row = _squares.map((item, i) => <div className="col-4">{i}</div>);
+    console.log(row);
+    return row;
   };
-  renderChessboard();
 
   return (
     <section>
-      <section className="container">Chessboard</section>
+      <section className="container">
+        <div className="row">{renderChessboard()}</div>
+      </section>
     </section>
   );
 };
