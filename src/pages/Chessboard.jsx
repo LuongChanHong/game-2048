@@ -29,15 +29,19 @@ const Chessboard = () => {
     //     row += `<div className="col">${i}</div></section><section className="row">`;
     //   }
     // }
-    let row = _squares.map((item, i) => <div className="col-4">{i}</div>);
-    console.log(row);
+    let row = _squares.map((item, i) => (
+      <div className="boardSquare col-4">
+        <div className="boardSquare--content">{i}</div>
+      </div>
+    ));
+    // console.log(row);
     return row;
   };
 
   return (
     <section>
       <section className="container">
-        <div className="row">{renderChessboard()}</div>
+        <div className="boardEdge row">{renderChessboard()}</div>
       </section>
     </section>
   );

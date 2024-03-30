@@ -1,3 +1,17 @@
-.square {
+.boardEdge {
+  background-color: blue;
+  border: 5px solid blue;
+}
+
+.boardSquare--content {
+  /* background-color: seagreen; */
+}
+
+.boardSquare {
+  border: 5px solid blue;
+
   background-color: var(--gray-II);
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
 }
