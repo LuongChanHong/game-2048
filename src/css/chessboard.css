@@ -1,17 +1,37 @@
 .boardEdge {
-  background-color: blue;
-  border: 5px solid blue;
-}
-
-.boardSquare--content {
-  /* background-color: seagreen; */
+  background-color: seagreen;
+  border: 5px solid seagreen;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .boardSquare {
-  border: 5px solid blue;
+  /* --width-value: 33.33333333%; */
+  border: 5px solid seagreen;
 
   background-color: var(--gray-II);
   align-items: center;
   justify-content: center;
   height: fit-content;
+
+  flex: 0 0 auto;
+  /* width: var(--width-value);
+  height: calc(2 * var(--width-value)); */
+}
+table {
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.boardSquare--content {
+  /* background-color: seagreen; */
 }
