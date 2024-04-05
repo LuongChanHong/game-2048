@@ -1,3 +1,7 @@
+:root {
+  --square-edge: 6rem;
+}
+
 .boardEdge {
   background-color: seagreen;
   border: 5px solid seagreen;
@@ -5,31 +9,24 @@
   flex-wrap: wrap;
 }
 
-.boardSquare {
-  /* --width-value: 33.33333333%; */
-  border: 5px solid seagreen;
-
-  background-color: var(--gray-II);
-  align-items: center;
-  justify-content: center;
-  height: fit-content;
-
-  flex: 0 0 auto;
-  /* width: var(--width-value);
-  height: calc(2 * var(--width-value)); */
-}
 table {
   border-collapse: collapse;
 }
 table,
 th,
 td {
-  border: 1px solid black;
 }
 th,
 td {
-  padding: 10px;
+  border-radius: 3rem;
   text-align: center;
+  padding: 0;
+  width: var(--square-edge);
+  height: var(--square-edge);
+  background-color: var(--gray-III);
+  color: var(--gray-I);
+  font-weight: bold;
+  font-size: calc(var(--square-edge) * 0.4);
 }
 
 .boardSquare--content {

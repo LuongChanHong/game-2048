@@ -1,0 +1,1 @@
+code lại chessboard width height cứng, gồm 1 hình vuông bự chứa 9 hình vuông nhỏ
